@@ -38,6 +38,7 @@ target 'SuccessfulOrigami' do
   pod 'ListKit'
   pod 'SwiftyVIPER'
   pod 'Eureka'
+  pod 'EPContactsPicker'
 
 
 
