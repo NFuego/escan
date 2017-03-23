@@ -8,6 +8,9 @@ import RxSwift
 import  RxCocoa
 import ListKit
 
+    // attr
+let kCodeFrameWidth = 200
+
 struct AccountItemInfo {
     let itemName:String
     let itemCost:Int
@@ -70,10 +73,8 @@ class AccountItemCell: UITableViewCell, ListKitCellProtocol {
 }
 
 class QRCodeScanVC : UIViewController {
-    
     lazy var readerVC = QRCodeReaderViewController(builder: QRCodeReaderViewControllerBuilder {
         let readerView = QRCodeReaderContainer(displayable: QRCodeReaderView())
-
         $0.readerView = readerView
     })
 
@@ -88,8 +89,7 @@ class QRCodeScanVC : UIViewController {
     var list:UITableView!
     var dataSource : ArrayDataSource<AccountItemCell,AccountItemInfo>?
 
-    // attr
-    let codeFrameWidth = 200
+    let manualAccountingVC = ManualAccountingModule().view
 
     override func viewDidLoad() {
        self.view.backgroundColor = .white
@@ -98,7 +98,7 @@ class QRCodeScanVC : UIViewController {
         self.addChildViewController(readerVC)
         self.view.addSubview(readerVC.view)
         readerVC.view.snp.makeConstraints { (make) in
-            make.size.equalTo(codeFrameWidth)
+            make.size.equalTo(kCodeFrameWidth)
             make.top.equalToSuperview().offset(50)
             make.centerX.equalToSuperview()
         }
@@ -124,7 +124,7 @@ class QRCodeScanVC : UIViewController {
         list.snp.makeConstraints { (make) in
            make.top.equalTo(readerVC.view.snp.bottom).offset(5)
             make.centerX.equalTo(readerVC.view)
-            make.width.equalTo(codeFrameWidth)
+            make.width.equalTo(kCodeFrameWidth)
             make.height.equalTo(120)
         }
 
@@ -139,7 +139,11 @@ class QRCodeScanVC : UIViewController {
             make.trailing.equalTo(list.snp.centerX)
         }
 
-        lbTotal.text = "450"
+        manualAddBtn.rx.tap.subscribe({(evt) in
+            self.navigationController?.pushViewController(self.manualAccountingVC, animated: true)
+        }).addDisposableTo(dbg)
+
+        lbTotal.text = "總計:450"
         lbTotal.textAlignment = .center
         self.view.addSubview(lbTotal)
         lbTotal.snp.makeConstraints { (make) in
@@ -182,8 +186,6 @@ class QRCodeScanVC : UIViewController {
         btnScan.rx.tap.subscribe({(evt) in
             self.scanAction()
         }).addDisposableTo(dbg)
-
-        
     }
 
     /*
@@ -213,7 +215,6 @@ class QRCodeScanVC : UIViewController {
 extension QRCodeScanVC : QRCodeReaderViewControllerDelegate {
     func reader(_ reader: QRCodeReaderViewController, didScanResult result: QRCodeReaderResult) {
 //        reader.stopScanning()
-
         print("didScanResult\(result)")
  //       dismiss(animated: true, completion: nil)
     }

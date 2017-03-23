@@ -36,6 +36,7 @@ target 'SuccessfulOrigami' do
   pod 'Typhoon'
   pod 'QRCodeReader.swift'
   pod 'ListKit'
+  pod 'SwiftyVIPER'
 
 
 

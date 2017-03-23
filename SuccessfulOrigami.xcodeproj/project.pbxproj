@@ -17,6 +17,11 @@
 		E719ECF01E82791E00B86088 /* ReaderOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E719ECED1E82791E00B86088 /* ReaderOverlayView.swift */; };
 		E719ECF11E82791E00B86088 /* SwitchCameraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E719ECEE1E82791E00B86088 /* SwitchCameraButton.swift */; };
 		E719ECF21E82791E00B86088 /* ToggleTorchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E719ECEF1E82791E00B86088 /* ToggleTorchButton.swift */; };
+		E719ECF91E83989300B86088 /* ManualAccountingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E719ECF41E83989300B86088 /* ManualAccountingInteractor.swift */; };
+		E719ECFA1E83989300B86088 /* ManualAccountingModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E719ECF51E83989300B86088 /* ManualAccountingModule.swift */; };
+		E719ECFB1E83989300B86088 /* ManualAccountingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E719ECF61E83989300B86088 /* ManualAccountingPresenter.swift */; };
+		E719ECFC1E83989300B86088 /* ManualAccountingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E719ECF71E83989300B86088 /* ManualAccountingRouter.swift */; };
+		E719ECFD1E83989300B86088 /* ManualAccountingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E719ECF81E83989300B86088 /* ManualAccountingViewController.swift */; };
 		E71AD3481E67CB0D00B0ADC7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E71AD3471E67CB0D00B0ADC7 /* GoogleService-Info.plist */; };
 		E756DDD61E69210E0064A3C4 /* AppOp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756DDD51E69210E0064A3C4 /* AppOp.swift */; };
 		E756DDD91E694BD10064A3C4 /* UIImage+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = E756DDD81E694BD10064A3C4 /* UIImage+Utils.m */; };
@@ -90,6 +95,11 @@
 		E719ECED1E82791E00B86088 /* ReaderOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderOverlayView.swift; sourceTree = "<group>"; };
 		E719ECEE1E82791E00B86088 /* SwitchCameraButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchCameraButton.swift; sourceTree = "<group>"; };
 		E719ECEF1E82791E00B86088 /* ToggleTorchButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleTorchButton.swift; sourceTree = "<group>"; };
+		E719ECF41E83989300B86088 /* ManualAccountingInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManualAccountingInteractor.swift; sourceTree = "<group>"; };
+		E719ECF51E83989300B86088 /* ManualAccountingModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManualAccountingModule.swift; sourceTree = "<group>"; };
+		E719ECF61E83989300B86088 /* ManualAccountingPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManualAccountingPresenter.swift; sourceTree = "<group>"; };
+		E719ECF71E83989300B86088 /* ManualAccountingRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManualAccountingRouter.swift; sourceTree = "<group>"; };
+		E719ECF81E83989300B86088 /* ManualAccountingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManualAccountingViewController.swift; sourceTree = "<group>"; };
 		E71AD3471E67CB0D00B0ADC7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E756DDD51E69210E0064A3C4 /* AppOp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppOp.swift; sourceTree = "<group>"; };
 		E756DDD71E694BD10064A3C4 /* UIImage+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Utils.h"; sourceTree = "<group>"; };
@@ -281,6 +291,18 @@
 			name = qrscan;
 			sourceTree = "<group>";
 		};
+		E719ECF31E8393EC00B86088 /* manualAccounting */ = {
+			isa = PBXGroup;
+			children = (
+				E719ECF41E83989300B86088 /* ManualAccountingInteractor.swift */,
+				E719ECF51E83989300B86088 /* ManualAccountingModule.swift */,
+				E719ECF61E83989300B86088 /* ManualAccountingPresenter.swift */,
+				E719ECF71E83989300B86088 /* ManualAccountingRouter.swift */,
+				E719ECF81E83989300B86088 /* ManualAccountingViewController.swift */,
+			);
+			name = manualAccounting;
+			sourceTree = "<group>";
+		};
 		E76703D31E66B6BC00466250 /* rsc */ = {
 			isa = PBXGroup;
 			children = (
@@ -357,6 +379,7 @@
 		E78F0B721E139DC5009CC7BB /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				E719ECF31E8393EC00B86088 /* manualAccounting */,
 				E719ECE41E8265AD00B86088 /* qrscan */,
 				E7D2B0851E695D75006F0394 /* fundamental */,
 				E7CAE0721E6810550070647F /* base */,
@@ -681,11 +704,14 @@
 				E78009EA1E149D480076E030 /* OptsVC.swift in Sources */,
 				E756DDD91E694BD10064A3C4 /* UIImage+Utils.m in Sources */,
 				E7CAE0741E6819230070647F /* Color+HexAndCSSColorNames.swift in Sources */,
+				E719ECFD1E83989300B86088 /* ManualAccountingViewController.swift in Sources */,
 				E7DD1A3A1E69677F00BB7896 /* KiteBase.swift in Sources */,
 				E70D77801E1C9237001D3BA9 /* SzAPI.swift in Sources */,
 				E7CAE06E1E6803BA0070647F /* VCProtocols.swift in Sources */,
 				E7FAE96B1E67BEE000040F6F /* MenuOptCell.swift in Sources */,
+				E719ECFA1E83989300B86088 /* ManualAccountingModule.swift in Sources */,
 				E7D0D0A61E1B9EAF009C8D75 /* AppConfig.swift in Sources */,
+				E719ECFC1E83989300B86088 /* ManualAccountingRouter.swift in Sources */,
 				E780CEBE1E120E6500EEA540 /* ViewController.swift in Sources */,
 				E7DD1A381E69629900BB7896 /* BirdBase.swift in Sources */,
 				E7FAE9691E67BBA600040F6F /* EvtTracker.swift in Sources */,
@@ -708,7 +734,9 @@
 				E7D0D06F1E1B417C009C8D75 /* NSString+Color.m in Sources */,
 				E719ECEC1E8278E700B86088 /* QRCodeReaderView.swift in Sources */,
 				E7D0D0931E1B990F009C8D75 /* JSONND+ArrayLiteralConvertible.swift in Sources */,
+				E719ECF91E83989300B86088 /* ManualAccountingInteractor.swift in Sources */,
 				E7D0D0991E1B990F009C8D75 /* JSONNDModel.swift in Sources */,
+				E719ECFB1E83989300B86088 /* ManualAccountingPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
