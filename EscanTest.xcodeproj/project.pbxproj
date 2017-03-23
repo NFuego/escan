@@ -22,6 +22,16 @@
 		E719ECFB1E83989300B86088 /* ManualAccountingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E719ECF61E83989300B86088 /* ManualAccountingPresenter.swift */; };
 		E719ECFC1E83989300B86088 /* ManualAccountingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E719ECF71E83989300B86088 /* ManualAccountingRouter.swift */; };
 		E719ECFD1E83989300B86088 /* ManualAccountingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E719ECF81E83989300B86088 /* ManualAccountingViewController.swift */; };
+		E719ED041E83A65500B86088 /* MemoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E719ECFF1E83A65500B86088 /* MemoInteractor.swift */; };
+		E719ED051E83A65500B86088 /* MemoModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E719ED001E83A65500B86088 /* MemoModule.swift */; };
+		E719ED061E83A65500B86088 /* MemoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E719ED011E83A65500B86088 /* MemoPresenter.swift */; };
+		E719ED071E83A65500B86088 /* MemoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E719ED021E83A65500B86088 /* MemoRouter.swift */; };
+		E719ED081E83A65500B86088 /* MemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E719ED031E83A65500B86088 /* MemoViewController.swift */; };
+		E719ED1B1E83BEA700B86088 /* MemoAddFormInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E719ED161E83BEA700B86088 /* MemoAddFormInteractor.swift */; };
+		E719ED1C1E83BEA700B86088 /* MemoAddFormModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E719ED171E83BEA700B86088 /* MemoAddFormModule.swift */; };
+		E719ED1D1E83BEA700B86088 /* MemoAddFormPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E719ED181E83BEA700B86088 /* MemoAddFormPresenter.swift */; };
+		E719ED1E1E83BEA700B86088 /* MemoAddFormRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E719ED191E83BEA700B86088 /* MemoAddFormRouter.swift */; };
+		E719ED1F1E83BEA700B86088 /* MemoAddFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E719ED1A1E83BEA700B86088 /* MemoAddFormViewController.swift */; };
 		E71AD3481E67CB0D00B0ADC7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E71AD3471E67CB0D00B0ADC7 /* GoogleService-Info.plist */; };
 		E756DDD61E69210E0064A3C4 /* AppOp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756DDD51E69210E0064A3C4 /* AppOp.swift */; };
 		E756DDD91E694BD10064A3C4 /* UIImage+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = E756DDD81E694BD10064A3C4 /* UIImage+Utils.m */; };
@@ -100,6 +110,16 @@
 		E719ECF61E83989300B86088 /* ManualAccountingPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManualAccountingPresenter.swift; sourceTree = "<group>"; };
 		E719ECF71E83989300B86088 /* ManualAccountingRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManualAccountingRouter.swift; sourceTree = "<group>"; };
 		E719ECF81E83989300B86088 /* ManualAccountingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManualAccountingViewController.swift; sourceTree = "<group>"; };
+		E719ECFF1E83A65500B86088 /* MemoInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoInteractor.swift; sourceTree = "<group>"; };
+		E719ED001E83A65500B86088 /* MemoModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoModule.swift; sourceTree = "<group>"; };
+		E719ED011E83A65500B86088 /* MemoPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoPresenter.swift; sourceTree = "<group>"; };
+		E719ED021E83A65500B86088 /* MemoRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoRouter.swift; sourceTree = "<group>"; };
+		E719ED031E83A65500B86088 /* MemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoViewController.swift; sourceTree = "<group>"; };
+		E719ED161E83BEA700B86088 /* MemoAddFormInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoAddFormInteractor.swift; sourceTree = "<group>"; };
+		E719ED171E83BEA700B86088 /* MemoAddFormModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoAddFormModule.swift; sourceTree = "<group>"; };
+		E719ED181E83BEA700B86088 /* MemoAddFormPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoAddFormPresenter.swift; sourceTree = "<group>"; };
+		E719ED191E83BEA700B86088 /* MemoAddFormRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoAddFormRouter.swift; sourceTree = "<group>"; };
+		E719ED1A1E83BEA700B86088 /* MemoAddFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoAddFormViewController.swift; sourceTree = "<group>"; };
 		E71AD3471E67CB0D00B0ADC7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E756DDD51E69210E0064A3C4 /* AppOp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppOp.swift; sourceTree = "<group>"; };
 		E756DDD71E694BD10064A3C4 /* UIImage+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Utils.h"; sourceTree = "<group>"; };
@@ -303,6 +323,30 @@
 			name = manualAccounting;
 			sourceTree = "<group>";
 		};
+		E719ECFE1E83A63900B86088 /* memo */ = {
+			isa = PBXGroup;
+			children = (
+				E719ECFF1E83A65500B86088 /* MemoInteractor.swift */,
+				E719ED001E83A65500B86088 /* MemoModule.swift */,
+				E719ED011E83A65500B86088 /* MemoPresenter.swift */,
+				E719ED021E83A65500B86088 /* MemoRouter.swift */,
+				E719ED031E83A65500B86088 /* MemoViewController.swift */,
+			);
+			name = memo;
+			sourceTree = "<group>";
+		};
+		E719ED091E83B9AE00B86088 /* memoAddForm */ = {
+			isa = PBXGroup;
+			children = (
+				E719ED161E83BEA700B86088 /* MemoAddFormInteractor.swift */,
+				E719ED171E83BEA700B86088 /* MemoAddFormModule.swift */,
+				E719ED181E83BEA700B86088 /* MemoAddFormPresenter.swift */,
+				E719ED191E83BEA700B86088 /* MemoAddFormRouter.swift */,
+				E719ED1A1E83BEA700B86088 /* MemoAddFormViewController.swift */,
+			);
+			name = memoAddForm;
+			sourceTree = "<group>";
+		};
 		E76703D31E66B6BC00466250 /* rsc */ = {
 			isa = PBXGroup;
 			children = (
@@ -379,6 +423,8 @@
 		E78F0B721E139DC5009CC7BB /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				E719ED091E83B9AE00B86088 /* memoAddForm */,
+				E719ECFE1E83A63900B86088 /* memo */,
 				E719ECF31E8393EC00B86088 /* manualAccounting */,
 				E719ECE41E8265AD00B86088 /* qrscan */,
 				E7D2B0851E695D75006F0394 /* fundamental */,
@@ -573,7 +619,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E780CEB31E120E6500EEA540 /* Build configuration list for PBXProject "SuccessfulOrigami" */;
+			buildConfigurationList = E780CEB31E120E6500EEA540 /* Build configuration list for PBXProject "EscanTest" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -702,8 +748,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E78009EA1E149D480076E030 /* OptsVC.swift in Sources */,
+				E719ED051E83A65500B86088 /* MemoModule.swift in Sources */,
 				E756DDD91E694BD10064A3C4 /* UIImage+Utils.m in Sources */,
 				E7CAE0741E6819230070647F /* Color+HexAndCSSColorNames.swift in Sources */,
+				E719ED1E1E83BEA700B86088 /* MemoAddFormRouter.swift in Sources */,
+				E719ED1B1E83BEA700B86088 /* MemoAddFormInteractor.swift in Sources */,
 				E719ECFD1E83989300B86088 /* ManualAccountingViewController.swift in Sources */,
 				E7DD1A3A1E69677F00BB7896 /* KiteBase.swift in Sources */,
 				E70D77801E1C9237001D3BA9 /* SzAPI.swift in Sources */,
@@ -718,22 +767,29 @@
 				E7DE4D311E14DD9F00E56314 /* StringExt.swift in Sources */,
 				E7D0D0901E1B990F009C8D75 /* JSONND.swift in Sources */,
 				E719ECF21E82791E00B86088 /* ToggleTorchButton.swift in Sources */,
+				E719ED071E83A65500B86088 /* MemoRouter.swift in Sources */,
 				4BE495D71E65D18600847A7D /* WelcomeVC.swift in Sources */,
 				E7EFABE41E1CDA0D00DC3DA8 /* Assembly.swift in Sources */,
 				E78009EC1E149E350076E030 /* FundamentalVC.swift in Sources */,
 				E719ECF11E82791E00B86088 /* SwitchCameraButton.swift in Sources */,
 				E780CEBC1E120E6500EEA540 /* AppDelegate.swift in Sources */,
+				E719ED061E83A65500B86088 /* MemoPresenter.swift in Sources */,
 				E756DDD61E69210E0064A3C4 /* AppOp.swift in Sources */,
+				E719ED1F1E83BEA700B86088 /* MemoAddFormViewController.swift in Sources */,
 				E7CAE06B1E67F6490070647F /* AppAppearance.swift in Sources */,
 				4B008FC21E671B57004A4CF5 /* OrigamiVC.swift in Sources */,
 				E7D0D0961E1B990F009C8D75 /* JSONND+DictionaryLiteralConvertible.swift in Sources */,
 				E7CAE0701E680EBD0070647F /* SlideVC.swift in Sources */,
 				E719ECE61E8265C700B86088 /* QRCodeScan.swift in Sources */,
 				E719ECF01E82791E00B86088 /* ReaderOverlayView.swift in Sources */,
+				E719ED1C1E83BEA700B86088 /* MemoAddFormModule.swift in Sources */,
+				E719ED041E83A65500B86088 /* MemoInteractor.swift in Sources */,
 				E7D2B0881E695DA6006F0394 /* Waterbomb.swift in Sources */,
+				E719ED1D1E83BEA700B86088 /* MemoAddFormPresenter.swift in Sources */,
 				E7D0D06F1E1B417C009C8D75 /* NSString+Color.m in Sources */,
 				E719ECEC1E8278E700B86088 /* QRCodeReaderView.swift in Sources */,
 				E7D0D0931E1B990F009C8D75 /* JSONND+ArrayLiteralConvertible.swift in Sources */,
+				E719ED081E83A65500B86088 /* MemoViewController.swift in Sources */,
 				E719ECF91E83989300B86088 /* ManualAccountingInteractor.swift in Sources */,
 				E7D0D0991E1B990F009C8D75 /* JSONNDModel.swift in Sources */,
 				E719ECFB1E83989300B86088 /* ManualAccountingPresenter.swift in Sources */,
@@ -1116,7 +1172,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E780CEB31E120E6500EEA540 /* Build configuration list for PBXProject "SuccessfulOrigami" */ = {
+		E780CEB31E120E6500EEA540 /* Build configuration list for PBXProject "EscanTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E780CEDE1E120E6500EEA540 /* Debug */,

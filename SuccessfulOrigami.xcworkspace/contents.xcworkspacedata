@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:SuccessfulOrigami.xcodeproj">
+      location = "group:/Users/zcon/Documents/tomas/playground/template/EscanTest.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

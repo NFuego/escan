@@ -7,20 +7,23 @@ func i18n(_ str:String)->String {
 class SlideVC : OptsVC, OptsDecoration {
 
     static let qrcodeScanVC = UINavigationController(rootViewController: QRCodeScanVC())
-    static let fundamentalOpts = UINavigationController(rootViewController: FundamentalVC())
 
     // For any single origami in the SlideVC should conform to VCDecoration protocol and setNavHeader
     static let swallow = UINavigationController(rootViewController: BirdBase())
     
-
-
+    
+    var fundamentalOpts:UINavigationController!
+    
     override func buildOpts(){
-
+        
+        let memoVC = MemoModule().view
+        fundamentalOpts = UINavigationController(rootViewController: memoVC)
+        
         var header = MenuOpt(title:i18n("menu.about"),targetVC:SlideVC.qrcodeScanVC,icon:"")
         header.header = true
             menuOpts = [
                         header,
-                        MenuOpt(title:i18n("menu.fundamental"),targetVC:SlideVC.fundamentalOpts,icon:""),
+                        MenuOpt(title:i18n("menu.memo"),targetVC:self.fundamentalOpts,icon:""),
                         MenuOpt(title:i18n("menu.swallow"),targetVC:SlideVC.swallow,icon:"")
         ]
     }

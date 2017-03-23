@@ -54,6 +54,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        let slideMenuController = SlideMenuController(mainViewController: leftVC.inOneVC, leftMenuViewController: leftVC)
 //        let slideMenuController = SlideMenuController(mainViewController: welcomeVC, leftMenuViewController: leftVC)
         let slideMenuController = SlideMenuController(mainViewController: SlideVC.qrcodeScanVC, leftMenuViewController: slideVC)
+        
         self.window?.rootViewController = slideMenuController
         self.window?.makeKeyAndVisible()
 
@@ -100,7 +101,6 @@ extension AppDelegate {
     func configLog(){
         log.setup(level: .debug, showThreadName: true, showLevel: true, showFileNames: true, showLineNumbers: true, writeToFile: "szDevLog", fileLevel: .debug)
     }
-
 }
 
 // MARK:- UI Config

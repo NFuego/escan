@@ -1,19 +1,19 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A1F94E04AA035CDEA2075B4F67E2E44AC5049DDC+++6BF6E6D",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "AAFC7E16D229513859C6C02A3B0F8A726F71297B+++6BF6E6D",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
     "A1F94E04AA035CDEA2075B4F67E2E44AC5049DDC+++9C1B404" : 9223372036854775807,
+    "AAFC7E16D229513859C6C02A3B0F8A726F71297B+++6BF6E6D" : 9223372036854775807,
     "A1F94E04AA035CDEA2075B4F67E2E44AC5049DDC+++87BFD78" : 9223372036854775807,
-    "A1F94E04AA035CDEA2075B4F67E2E44AC5049DDC+++6BF6E6D" : 9223372036854775807,
     "E6D213C34030D0C425EBA064BAA7E3D79DD70BB0+++23B5E8A" : 9223372036854775807
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "57B01FF5-F76C-4904-B16C-82562460D50E",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "A1F94E04AA035CDEA2075B4F67E2E44AC5049DDC+++9C1B404" : "",
+    "AAFC7E16D229513859C6C02A3B0F8A726F71297B+++6BF6E6D" : "template\/",
     "A1F94E04AA035CDEA2075B4F67E2E44AC5049DDC+++87BFD78" : "",
-    "A1F94E04AA035CDEA2075B4F67E2E44AC5049DDC+++6BF6E6D" : "template\/",
     "E6D213C34030D0C425EBA064BAA7E3D79DD70BB0+++23B5E8A" : "..\/survey\/QRCodeReader.swift"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "SuccessfulOrigami",
@@ -23,17 +23,17 @@
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/NFuego\/template.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A1F94E04AA035CDEA2075B4F67E2E44AC5049DDC+++6BF6E6D"
-    },
-    {
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/NFuego\/template.git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A1F94E04AA035CDEA2075B4F67E2E44AC5049DDC+++87BFD78"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/NFuego\/template.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A1F94E04AA035CDEA2075B4F67E2E44AC5049DDC+++9C1B404"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/NFuego\/template.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AAFC7E16D229513859C6C02A3B0F8A726F71297B+++6BF6E6D"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/yannickl\/QRCodeReader.swift.git",

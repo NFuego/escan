@@ -37,6 +37,13 @@ class ManualAccountingViewController: UIViewController {
     var addBtn:UIButton!
     var itemTf:UITextField!
     var costTf:UITextField!
+    
+    var infos = [AccountItemInfo(itemName: "service a", itemCost: 150),
+                 AccountItemInfo(itemName: "service b", itemCost: 250),
+                 AccountItemInfo(itemName: "service c", itemCost: 300),
+                 AccountItemInfo(itemName: "service d", itemCost: 200),
+                 AccountItemInfo(itemName: "service e", itemCost: 100),
+                 AccountItemInfo(itemName: "service f", itemCost: 1500) ]
 
 	// MARK: Inits
 
@@ -113,12 +120,6 @@ class ManualAccountingViewController: UIViewController {
         list.backgroundColor = .white
         list.delegate = self
 
-        let infos = [AccountItemInfo(itemName: "service a", itemCost: 150),
-                     AccountItemInfo(itemName: "service b", itemCost: 250),
-                     AccountItemInfo(itemName: "service c", itemCost: 300),
-                     AccountItemInfo(itemName: "service d", itemCost: 200),
-                     AccountItemInfo(itemName: "service e", itemCost: 100),
-                     AccountItemInfo(itemName: "service f", itemCost: 1500) ]
 
         dataSource = ArrayDataSource(array:infos,cellType:AccountItemCell.self)
         self.list.dataSource = dataSource
@@ -159,4 +160,5 @@ extension ManualAccountingViewController : UITableViewDelegate {
         self.navigationController?.pushViewController(u, animated: false)
     }
  */
+
 }

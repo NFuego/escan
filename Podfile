@@ -37,6 +37,7 @@ target 'SuccessfulOrigami' do
   pod 'QRCodeReader.swift'
   pod 'ListKit'
   pod 'SwiftyVIPER'
+  pod 'Eureka'
 
 
 

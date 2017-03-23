@@ -3,9 +3,8 @@ import AVFoundation
 import UIKit
 import QRCodeReader
 import SnapKit
-
 import RxSwift
-import  RxCocoa
+import RxCocoa
 import ListKit
 
     // attr
