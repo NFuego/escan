@@ -80,7 +80,7 @@ open class EPContactsPicker: UITableViewController, UISearchResultsUpdating, UIS
         if multiSelectEnabled {
             let doneButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: self, action: #selector(onTouchDoneButton))
             self.navigationItem.rightBarButtonItem = doneButton
-            
+           
         }
     }
     

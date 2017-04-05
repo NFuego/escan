@@ -26,7 +26,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // Var
 
-
 // icon
 //    https://icons8.com/web-app/for/all/arrow
 
