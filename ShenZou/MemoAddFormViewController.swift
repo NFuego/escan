@@ -1,12 +1,4 @@
-//
-//  MemoAddFormViewController.swift
-//  Project: EscanTest
-//
-//  Module: MemoAddForm
-//
-//  By zcon 2017/3/23
-//  zcon 2017年
-//
+
 
 // MARK: Imports
 

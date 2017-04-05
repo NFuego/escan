@@ -1,12 +1,4 @@
-//
-//  MemoRouter.swift
-//  Project: EscanTest
-//
-//  Module: Memo
-//
-//  By zcon 2017/3/23
-//  zcon 2017年
-//
+
 
 // MARK: Imports
 

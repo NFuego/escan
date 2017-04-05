@@ -1,12 +1,4 @@
-//
-//  ContactViewInteractor.swift
-//  Project: EscanTest
-//
-//  Module: ContactView
-//
-//  By zcon 2017/4/5
-//  zcon 2017年
-//
+
 
 // MARK: Imports
 
