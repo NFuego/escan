@@ -1,7 +1,5 @@
 
-
 // MARK: Imports
-
 import UIKit
 
 import SwiftyVIPER
@@ -10,7 +8,7 @@ import SwiftyVIPER
 
 /// Should be conformed to by the `ContactViewPresenter` and referenced by `ContactViewViewController`
 protocol ContactViewViewPresenterProtocol: ViewPresenterProtocol {
-
+    func viewAppeared() 
 }
 
 /// Should be conformed to by the `ContactViewPresenter` and referenced by `ContactViewInteractor`
@@ -26,18 +24,14 @@ protocol ContactViewInteractorPresenterProtocol: class {
 
 /// The Presenter for the ContactView module
 final class ContactViewPresenter {
-
 	// MARK: - Constants
-
 	let router: ContactViewPresenterRouterProtocol
 	let interactor: ContactViewPresenterInteractorProtocol
 
 	// MARK: Variables
-
 	weak var view: ContactViewPresenterViewProtocol?
 
 	// MARK: Inits
-
 	init(router: ContactViewPresenterRouterProtocol, interactor: ContactViewPresenterInteractorProtocol) {
 		self.router = router
 		self.interactor = interactor
@@ -47,10 +41,11 @@ final class ContactViewPresenter {
 // MARK: - ContactView View to Presenter Protocol
 
 extension ContactViewPresenter: ContactViewViewPresenterProtocol {
-
 	func viewLoaded() {
 		interactor.requestTitle()
 	}
+
+
 }
 
 // MARK: ContactView Interactor to Presenter Protocol
@@ -61,3 +56,5 @@ extension ContactViewPresenter: ContactViewInteractorPresenterProtocol {
 		view?.set(title: title)
 	}
 }
+
+

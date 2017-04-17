@@ -21,8 +21,8 @@ class SlideVC : OptsVC, OptsDecoration {
         
         let contactView = ContactViewModule().view
 
-//        fundamentalOpts = UINavigationController(rootViewController: memoVC)
-        fundamentalOpts = UINavigationController(rootViewController: contactView)
+        fundamentalOpts = UINavigationController(rootViewController: memoVC)
+//        fundamentalOpts = UINavigationController(rootViewController: contactView)
 
         cp = EPContactsPicker(delegate: self, multiSelection:false, subtitleCellType: SubtitleCellValue.phoneNumber)
         print(cp.contactDelegate)

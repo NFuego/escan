@@ -39,8 +39,6 @@ target 'SuccessfulOrigami' do
   pod 'SwiftyVIPER'
   pod 'Eureka'
   pod 'EPContactsPicker'
-
-
-
+  pod 'Kingfisher'
 
 end

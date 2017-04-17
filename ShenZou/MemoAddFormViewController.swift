@@ -86,7 +86,9 @@ extension MemoAddFormViewController {
                     l.tag = ""
                     l.placeholder = "輸入行事曆"
                     l.title = NSLocalizedString("", comment: "")
+
                 }
+                
                 <<< SwitchRow() { (s:SwitchRow) -> Void in
                     s.tag = kLocalNotify
                     s.title = NSLocalizedString("開啟提醒通知", comment: "")

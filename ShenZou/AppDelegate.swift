@@ -5,10 +5,8 @@ import RxSwift
 import Moya
 import SwiftyJSON
 import XCGLogger
-
 import GoogleMobileAds
 import FirebaseAnalytics
-
 import MessageUI
 
 
@@ -46,7 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         SuccOrigamiConfig.appMode = .development
         SuccOrigamiConfig.useAd = false
 //        SuccOrigamiConfig.appMode = .production
-//        configLog()
+//        configLog()wiZXhwIjoxNDg5OTQ1NTkyLCJuYmYiOjE0ODIwNTYzNzIsImp0a
         configUIAppearance()
 
         let slideVC = SlideVC()
@@ -110,7 +108,6 @@ extension AppDelegate {
 //        [[UILabel appearance]setFont:[UIFont fontWithName:@"HelveticaNeue-Thin" size:32.0f]];
         UILabel.appearance().defaultFont = lbFt
     }
-    
 }
 
 
@@ -123,6 +120,6 @@ extension UILabel{
             self.font = UIFont(name: fontNameOfNewFont!, size: sizeOfOldFont)
         }
     }
-    
 }
+
 

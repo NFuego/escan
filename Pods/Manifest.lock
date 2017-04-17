@@ -29,6 +29,7 @@ PODS:
   - GoogleToolboxForMac/Defines (2.1.1)
   - GoogleToolboxForMac/NSData+zlib (2.1.1):
     - GoogleToolboxForMac/Defines (= 2.1.1)
+  - Kingfisher (3.5.2)
   - ListKit (2.0.0)
   - Moya (8.0.0-beta.6):
     - Moya/Core (= 8.0.0-beta.6)
@@ -77,6 +78,7 @@ DEPENDENCIES:
   - Eureka
   - Firebase/AdMob
   - Firebase/Core
+  - Kingfisher
   - ListKit
   - Moya (= 8.0.0-beta.6)
   - Moya/RxSwift
@@ -108,6 +110,7 @@ SPEC CHECKSUMS:
   GoogleInterchangeUtilities: d5bc4d88d5b661ab72f9d70c58d02ca8c27ad1f7
   GoogleSymbolUtilities: 631ee17048aa5e9ab133470d768ea997a5ef9b96
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
+  Kingfisher: 9950e382c500b6834ce004c7c4131c444e90c3a1
   ListKit: 3cc52b46436812398207846bd08e91feaea85042
   Moya: a29e2503a0c5067d462ba2f07cc6b6b1f3fc172d
   QRCodeReader.swift: d7e190d49818948aa030704cfb26283f1f32fb0a
@@ -127,6 +130,6 @@ SPEC CHECKSUMS:
   Typhoon: 1fcbf6417e7040e645c910e7004336c51c916fb3
   XCGLogger: 38063ea89b4c8b23232d18efd2e12eb0005f3ea4
 
-PODFILE CHECKSUM: 825e2970423bf620a0cfc2243e5e1145c5fb1cb3
+PODFILE CHECKSUM: 0c5e8121ed96a439a8cd8856564283f984f282ab
 
 COCOAPODS: 1.2.0
