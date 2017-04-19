@@ -14,7 +14,6 @@ import SnapKit
 import RxSwift
 import RxCocoa
 import ListKit
-//import struct Swiftz.List
 
 let nslAccounting = NSLocalizedString("str.accounting", comment: "")
 let nslManualAccounting = NSLocalizedString("str.manual.accounting", comment: "")
@@ -252,7 +251,6 @@ class StoreAccountingViewController: UIViewController {
 }
 
 // MARK: - helper
-
 extension StoreAccountingViewController {
     func bindActs(){
         manualAddBtn.rx.tap.subscribe({(evt) in
@@ -268,7 +266,6 @@ extension StoreAccountingViewController {
             self.reloadItemList()
             self.calculateCost()
         }).addDisposableTo(dbg)
-
 
 //        Variable(totalCost.description).asObservable().bindTo(lbTotal.rx.text)
 //        totalCost = 200
@@ -286,8 +283,14 @@ extension StoreAccountingViewController {
     }
 
     func calculateCost() {
-//        let l : List<AccountItemInfo> = self.infos
-//        let sum = l.reduce(curry(+), initial: 0)
+
+
+//        let l = List<AccountItemInfo>(fromArray: infos)
+//        let sum = l.reduce({ (int, item:AccountItemInfo) -> Int in
+//            print(int.description)
+//            print(item.itemCost.description)
+//            return item.itemCost
+//        }, initial: 0)
 //        lbTotal.text = "\(nslTotalPrice):\(sum)"
     }
 }
@@ -324,7 +327,7 @@ extension StoreAccountingViewController : QRCodeReaderViewControllerDelegate {
     }
 
     //This is an optional delegate method, that allows you to be notified when the user switches the cameraName
-    By pressing on the switch camera button
+    //By pressing on the switch camera button
     func reader(_ reader: QRCodeReaderViewController, didSwitchCamera newCaptureDevice: AVCaptureDeviceInput) {
         if let cameraName = newCaptureDevice.device.localizedName {
             print("Switching capturing to: \(cameraName)")

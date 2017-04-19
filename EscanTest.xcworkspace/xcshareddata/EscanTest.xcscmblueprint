@@ -4,13 +4,19 @@
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "53964F28C4CCA0826677C9F951DD3F64C20326C4" : 9223372036854775807,
+    "39C07F1822062044696C292623848404D8A25E25" : 9223372036854775807,
+    "B1566CF92CFABA5E37554B7B555A1BA50691C03A" : 9223372036854775807,
     "AAFC7E16D229513859C6C02A3B0F8A726F71297B" : 9223372036854775807,
-    "39C07F1822062044696C292623848404D8A25E25" : 9223372036854775807
+    "3F7B0726EE5826699845B3907BCC122BD128DE11" : 9223372036854775807
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8BD072A4-FDD1-4E83-BB3C-57D97AF9D76D",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "53964F28C4CCA0826677C9F951DD3F64C20326C4" : "template\/Swiftz\/Carthage\/Checkouts\/SwiftCheck\/",
+    "39C07F1822062044696C292623848404D8A25E25" : "template\/Swiftz\/",
+    "B1566CF92CFABA5E37554B7B555A1BA50691C03A" : "template\/Swiftz\/Carthage\/Checkouts\/Operadics\/",
     "AAFC7E16D229513859C6C02A3B0F8A726F71297B" : "template\/",
-    "39C07F1822062044696C292623848404D8A25E25" : "template\/Swiftz\/"
+    "3F7B0726EE5826699845B3907BCC122BD128DE11" : "template\/Swiftz\/Carthage\/Checkouts\/Swiftx\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "EscanTest",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -22,9 +28,24 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "39C07F1822062044696C292623848404D8A25E25"
     },
     {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/typelift\/Swiftx.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3F7B0726EE5826699845B3907BCC122BD128DE11"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/typelift\/SwiftCheck.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "53964F28C4CCA0826677C9F951DD3F64C20326C4"
+    },
+    {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/NFuego\/escan.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AAFC7E16D229513859C6C02A3B0F8A726F71297B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/typelift\/Operadics.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B1566CF92CFABA5E37554B7B555A1BA50691C03A"
     }
   ]
 }
