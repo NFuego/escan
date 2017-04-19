@@ -9,9 +9,7 @@
 /* Begin PBXBuildFile section */
 		4B008FC21E671B57004A4CF5 /* OrigamiVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B008FC11E671B57004A4CF5 /* OrigamiVC.swift */; };
 		4BE495D71E65D18600847A7D /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE495D61E65D18600847A7D /* WelcomeVC.swift */; };
-		C223B483314746557BA3E31B /* Pods_SuccessfulOrigami.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4A0D76B63C012C4343254A4 /* Pods_SuccessfulOrigami.framework */; };
 		E70D77801E1C9237001D3BA9 /* SzAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70D777F1E1C9237001D3BA9 /* SzAPI.swift */; };
-		E719ECE61E8265C700B86088 /* QRCodeScan.swift in Sources */ = {isa = PBXBuildFile; fileRef = E719ECE51E8265C700B86088 /* QRCodeScan.swift */; };
 		E719ECE81E82685A00B86088 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E719ECE71E82685A00B86088 /* AVFoundation.framework */; };
 		E719ECEC1E8278E700B86088 /* QRCodeReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E719ECEB1E8278E700B86088 /* QRCodeReaderView.swift */; };
 		E719ECF01E82791E00B86088 /* ReaderOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E719ECED1E82791E00B86088 /* ReaderOverlayView.swift */; };
@@ -41,6 +39,12 @@
 		E756DDD61E69210E0064A3C4 /* AppOp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756DDD51E69210E0064A3C4 /* AppOp.swift */; };
 		E756DDD91E694BD10064A3C4 /* UIImage+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = E756DDD81E694BD10064A3C4 /* UIImage+Utils.m */; };
 		E76703D81E66BE8300466250 /* HelveticaNeue.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E76703D51E66B6DA00466250 /* HelveticaNeue.ttf */; };
+		E7782D981EA737E200C315E0 /* StoreAccountingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7782D931EA737E200C315E0 /* StoreAccountingInteractor.swift */; };
+		E7782D991EA737E200C315E0 /* StoreAccountingModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7782D941EA737E200C315E0 /* StoreAccountingModule.swift */; };
+		E7782D9A1EA737E200C315E0 /* StoreAccountingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7782D951EA737E200C315E0 /* StoreAccountingPresenter.swift */; };
+		E7782D9B1EA737E200C315E0 /* StoreAccountingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7782D961EA737E200C315E0 /* StoreAccountingRouter.swift */; };
+		E7782D9C1EA737E200C315E0 /* StoreAccountingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7782D971EA737E200C315E0 /* StoreAccountingViewController.swift */; };
+		E7782DC81EA7636600C315E0 /* Pods_SuccessfulOrigami.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4A0D76B63C012C4343254A4 /* Pods_SuccessfulOrigami.framework */; };
 		E77BE6921E67E1F8000FA7F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E77BE6941E67E1F8000FA7F8 /* InfoPlist.strings */; };
 		E77BE6971E67E2A0000FA7F8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E77BE6991E67E2A0000FA7F8 /* Localizable.strings */; };
 		E78009EA1E149D480076E030 /* OptsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78009E91E149D480076E030 /* OptsVC.swift */; };
@@ -110,7 +114,6 @@
 		A4A0D76B63C012C4343254A4 /* Pods_SuccessfulOrigami.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuccessfulOrigami.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E705F24A1E1B3377009C8F0C /* ShenZou-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ShenZou-Bridging-Header.h"; sourceTree = "<group>"; };
 		E70D777F1E1C9237001D3BA9 /* SzAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SzAPI.swift; sourceTree = "<group>"; };
-		E719ECE51E8265C700B86088 /* QRCodeScan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeScan.swift; sourceTree = "<group>"; };
 		E719ECE71E82685A00B86088 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		E719ECEB1E8278E700B86088 /* QRCodeReaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReaderView.swift; sourceTree = "<group>"; };
 		E719ECED1E82791E00B86088 /* ReaderOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderOverlayView.swift; sourceTree = "<group>"; };
@@ -141,6 +144,11 @@
 		E756DDD71E694BD10064A3C4 /* UIImage+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Utils.h"; sourceTree = "<group>"; };
 		E756DDD81E694BD10064A3C4 /* UIImage+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Utils.m"; sourceTree = "<group>"; };
 		E76703D51E66B6DA00466250 /* HelveticaNeue.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HelveticaNeue.ttf; sourceTree = "<group>"; };
+		E7782D931EA737E200C315E0 /* StoreAccountingInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreAccountingInteractor.swift; sourceTree = "<group>"; };
+		E7782D941EA737E200C315E0 /* StoreAccountingModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreAccountingModule.swift; sourceTree = "<group>"; };
+		E7782D951EA737E200C315E0 /* StoreAccountingPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreAccountingPresenter.swift; sourceTree = "<group>"; };
+		E7782D961EA737E200C315E0 /* StoreAccountingRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreAccountingRouter.swift; sourceTree = "<group>"; };
+		E7782D971EA737E200C315E0 /* StoreAccountingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreAccountingViewController.swift; sourceTree = "<group>"; };
 		E77BE6931E67E1F8000FA7F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E77BE6981E67E2A0000FA7F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E77BE69A1E67E2BB000FA7F8 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
@@ -281,8 +289,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7782DC81EA7636600C315E0 /* Pods_SuccessfulOrigami.framework in Frameworks */,
 				E719ECE81E82685A00B86088 /* AVFoundation.framework in Frameworks */,
-				C223B483314746557BA3E31B /* Pods_SuccessfulOrigami.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,7 +335,6 @@
 				E719ECED1E82791E00B86088 /* ReaderOverlayView.swift */,
 				E719ECEE1E82791E00B86088 /* SwitchCameraButton.swift */,
 				E719ECEF1E82791E00B86088 /* ToggleTorchButton.swift */,
-				E719ECE51E8265C700B86088 /* QRCodeScan.swift */,
 				E719ECEB1E8278E700B86088 /* QRCodeReaderView.swift */,
 			);
 			name = qrscan;
@@ -400,6 +407,19 @@
 			name = fonts;
 			sourceTree = "<group>";
 		};
+		E7782D921EA5B97800C315E0 /* accounting */ = {
+			isa = PBXGroup;
+			children = (
+				E719ECE41E8265AD00B86088 /* qrscan */,
+				E7782D931EA737E200C315E0 /* StoreAccountingInteractor.swift */,
+				E7782D941EA737E200C315E0 /* StoreAccountingModule.swift */,
+				E7782D951EA737E200C315E0 /* StoreAccountingPresenter.swift */,
+				E7782D961EA737E200C315E0 /* StoreAccountingRouter.swift */,
+				E7782D971EA737E200C315E0 /* StoreAccountingViewController.swift */,
+			);
+			name = accounting;
+			sourceTree = "<group>";
+		};
 		E77BE68F1E67E180000FA7F8 /* lang */ = {
 			isa = PBXGroup;
 			children = (
@@ -458,12 +478,12 @@
 		E78F0B721E139DC5009CC7BB /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				E7782D921EA5B97800C315E0 /* accounting */,
 				E7B4039B1E95F053006B138D /* petList */,
 				E74CB1681E94F00600916F9E /* contactView */,
 				E719ED091E83B9AE00B86088 /* memoAddForm */,
 				E719ECFE1E83A63900B86088 /* memo */,
 				E719ECF31E8393EC00B86088 /* manualAccounting */,
-				E719ECE41E8265AD00B86088 /* qrscan */,
 				E7D2B0851E695D75006F0394 /* fundamental */,
 				E7CAE0721E6810550070647F /* base */,
 				E7CAE0711E6810450070647F /* opts */,
@@ -808,6 +828,7 @@
 				E70D77801E1C9237001D3BA9 /* SzAPI.swift in Sources */,
 				E7CAE06E1E6803BA0070647F /* VCProtocols.swift in Sources */,
 				E7FAE96B1E67BEE000040F6F /* MenuOptCell.swift in Sources */,
+				E7782D9B1EA737E200C315E0 /* StoreAccountingRouter.swift in Sources */,
 				E7B403A41E95F0F2006B138D /* PetListRouter.swift in Sources */,
 				E719ECFA1E83989300B86088 /* ManualAccountingModule.swift in Sources */,
 				E74CB1701E94F04100916F9E /* ContactViewPresenter.swift in Sources */,
@@ -834,13 +855,14 @@
 				E7B4039A1E95EB27006B138D /* ImgRow.swift in Sources */,
 				E7CAE06B1E67F6490070647F /* AppAppearance.swift in Sources */,
 				4B008FC21E671B57004A4CF5 /* OrigamiVC.swift in Sources */,
+				E7782D9C1EA737E200C315E0 /* StoreAccountingViewController.swift in Sources */,
 				E7D0D0961E1B990F009C8D75 /* JSONND+DictionaryLiteralConvertible.swift in Sources */,
 				E7CAE0701E680EBD0070647F /* SlideVC.swift in Sources */,
-				E719ECE61E8265C700B86088 /* QRCodeScan.swift in Sources */,
 				E719ECF01E82791E00B86088 /* ReaderOverlayView.swift in Sources */,
 				E719ED1C1E83BEA700B86088 /* MemoAddFormModule.swift in Sources */,
 				E74CB1711E94F04100916F9E /* ContactViewRouter.swift in Sources */,
 				E719ED041E83A65500B86088 /* MemoInteractor.swift in Sources */,
+				E7782D981EA737E200C315E0 /* StoreAccountingInteractor.swift in Sources */,
 				E7D2B0881E695DA6006F0394 /* Waterbomb.swift in Sources */,
 				E719ED1D1E83BEA700B86088 /* MemoAddFormPresenter.swift in Sources */,
 				E7B403A11E95F0F2006B138D /* PetListInteractor.swift in Sources */,
@@ -848,6 +870,8 @@
 				E719ECEC1E8278E700B86088 /* QRCodeReaderView.swift in Sources */,
 				E7D0D0931E1B990F009C8D75 /* JSONND+ArrayLiteralConvertible.swift in Sources */,
 				E719ED081E83A65500B86088 /* MemoViewController.swift in Sources */,
+				E7782D9A1EA737E200C315E0 /* StoreAccountingPresenter.swift in Sources */,
+				E7782D991EA737E200C315E0 /* StoreAccountingModule.swift in Sources */,
 				E7B403A21E95F0F2006B138D /* PetListModule.swift in Sources */,
 				E719ECF91E83989300B86088 /* ManualAccountingInteractor.swift in Sources */,
 				E7D0D0991E1B990F009C8D75 /* JSONNDModel.swift in Sources */,
@@ -1128,7 +1152,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7194A4E012F75954E93B6DBA /* Pods-SuccessfulOrigami.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = M43ZXET4L5;
@@ -1149,7 +1172,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6CA5E0684684C4E3433C95B6 /* Pods-SuccessfulOrigami.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = M43ZXET4L5;

@@ -1,9 +1,5 @@
-
-
 // MARK: Imports
-
 import Foundation
-
 import SwiftyVIPER
 
 // MARK: Protocols
@@ -20,7 +16,6 @@ protocol MemoAddFormPresenterInteractorProtocol {
 final class MemoAddFormInteractor {
 
 	// MARK: - Variables
-
 	weak var presenter: MemoAddFormInteractorPresenterProtocol?
 }
 

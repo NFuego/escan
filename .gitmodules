@@ -1,0 +1,3 @@
+[submodule "Swiftz"]
+	path = Swiftz
+	url = https://github.com/typelift/Swiftz.git

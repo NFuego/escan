@@ -7,7 +7,7 @@ func i18n(_ str:String)->String {
 
 class SlideVC : OptsVC, OptsDecoration {
 
-    static let qrcodeScanVC = UINavigationController(rootViewController: QRCodeScanVC())
+    static let qrcodeScanVC = UINavigationController(rootViewController: StoreAccountingModule().view)
 
     // For any single origami in the SlideVC should conform to VCDecoration protocol and setNavHeader
     static let swallow = UINavigationController(rootViewController: BirdBase())
