@@ -2,7 +2,10 @@
 //  Project: EscanTest
 //
 //  Module: StoreAccounting
+//白髮三千丈，緣愁似個長。不知明鏡裡，何處得秋霜。
+//http://baike.baidu.com/item/%E7%A7%8B%E6%B5%A6%E6%AD%8C%E5%8D%81%E4%B8%83%E9%A6%96/2807319?fromtitle=%E7%A7%8B%E6%B5%A6%E6%AD%8C&fromid=4383770
 //
+
 // MARK: Imports
 
 import UIKit
@@ -146,6 +149,7 @@ class StoreAccountingViewController: UIViewController {
 		presenter.viewLoaded()
 
 		view.backgroundColor = .white
+        readerVC.delegate = self
 
         // qrcode
         self.addChildViewController(readerVC)
@@ -234,12 +238,11 @@ class StoreAccountingViewController: UIViewController {
     func scanAction() {
         // Retrieve the QRCode content
         // By using the delegate pattern
-        readerVC.delegate = self
         readerVC.startScanning()
         // Or by using the closure pattern
-        //        readerVC.completionBlock = { (result: QRCodeReaderResult?) in
-        //            print("result:\(result)")
-        //        }
+//                readerVC.completionBlock = { (result: QRCodeReaderResult?) in
+//                    print("scanAction#result:\(result)")
+//                }
         // Presents the readerVC as modal form sheet
         //        readerVC.modalPresentationStyle = .formSheet
         //        present(readerVC, animated: true, completion: nil)
@@ -272,6 +275,7 @@ extension StoreAccountingViewController {
     }
 
     func reloadItemList(){
+        print("reloadItemList about the list:\(self.infos)")
         DispatchQueue.global(qos: .userInitiated).async {
             DispatchQueue.main.async {
                 self.dataSource = ArrayDataSource(array:self.infos.reversed(),cellType:AccountItemCell.self)
@@ -283,15 +287,25 @@ extension StoreAccountingViewController {
     }
 
     func calculateCost() {
-
-
 //        let l = List<AccountItemInfo>(fromArray: infos)
 //        let sum = l.reduce({ (int, item:AccountItemInfo) -> Int in
-//            print(int.description)
+        let sum = reduce(arr: self.infos, initialValue: 0, combine: {val,item in
+            return item.itemCost + val
+        })
+
+        print(sum)
 //            print(item.itemCost.description)
 //            return item.itemCost
 //        }, initial: 0)
-//        lbTotal.text = "\(nslTotalPrice):\(sum)"
+        lbTotal.text = "\(nslTotalPrice):\(sum)"
+    }
+
+    func reduce<A, R>(arr: [A], initialValue: R, combine: (R, A) -> R) -> R {
+        var result = initialValue
+        for i in arr {
+            result = combine(result, i)
+        }
+        return result
     }
 }
 
@@ -321,7 +335,6 @@ extension StoreAccountingViewController : QRCodeReaderViewControllerDelegate {
         //            DispatchQueue.main.sync {
         //            }
         //        }
-
 
         //       dismiss(animated: true, completion: nil)
     }
